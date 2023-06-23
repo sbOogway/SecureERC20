@@ -30,6 +30,22 @@ abstract contract SecureERC20 is ISecureERC20 {
         return _symbol;
     }
 
+    function decimals() public view virtual returns (uint8) {
+        return _decimals;
+    }
+
+    function totalSupply() public view virtual returns (uint256) {
+        return _totalSupply;
+    }
+
+    function owner() public view virtual returns (address) {
+        return _owner;
+    }
+
+    function creator() public view virtual returns (address) {
+        return _creator;
+    }
+
 
 
 
